@@ -7,8 +7,8 @@
       </el-header>
       <el-main>
       <div class="main">
-        <!-- <router-view></router-view> -->
-        <content-view></content-view>
+        <router-view></router-view>
+        <!-- <content-view></content-view> -->
       </div>
       </el-main>
       <div class="indFooter">
@@ -22,7 +22,7 @@
 import HeadNav from "./head.vue";
 import FooterNav from "./footer.vue";
 import backTop from "./backTop.vue";
-import contentView from "../components/content";
+// import contentView from "../components/content";
 export default {
   name: "home",
   data() {
@@ -31,8 +31,8 @@ export default {
   components: {
     HeadNav,
     FooterNav,
-    backTop,
-    contentView
+    backTop
+    // contentView
   }
 };
 </script>
