@@ -6,15 +6,14 @@
         <head-nav></head-nav>
       </el-header>
       <el-main>
-      <div class="main">
-        <router-view></router-view>
-        <!-- <content-view></content-view> -->
-      </div>
+        <div class="main">
+            <router-view></router-view>
+        </div>
       </el-main>
       <div class="indFooter">
         <footerNav></footerNav>
-     </div>
-       <backTop :ele="$refs.home"></backTop>
+      </div>
+      <backTop :ele="$refs.home"></backTop>
     </div>
   </el-container>
 </template>
@@ -22,21 +21,25 @@
 import HeadNav from "./head.vue";
 import FooterNav from "./footer.vue";
 import backTop from "./backTop.vue";
-// import contentView from "../components/content";
 export default {
   name: "home",
   data() {
-    return {};
+    return {
+    };
   },
   components: {
     HeadNav,
     FooterNav,
     backTop
-    // contentView
   }
 };
 </script>
 <style scoped>
-.home{margin: auto;}
-.indFooter{margin-bottom: 10px;}
+.home {
+  margin: auto;
+  width: 95%;
+}
+.indFooter {
+  margin-bottom: 10px;
+}
 </style>

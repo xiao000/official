@@ -33,41 +33,47 @@ export default {
         { domId: "business", name: "业务范围" },
         { domId: "cloud", name: "云算力" },
         { domId: "downloadApp", name: "下载APP" },
-        { domId: "", name: "关于我们" }
+        { domId: "block", name: "关于我们" }
       ]
     };
   },
   methods: {
     change(index, domId) {
-      if (index == "4") {
-           this.$router.push({ path: "/myself" });
-      } else {
-         this.$router.push({ path: "/content" });
-        // 当前窗口正中心位置到指定dom位置的距离
-        //页面滚动了的距离
-        let height =
-          window.pageYOffset ||
-          document.documentElement.scrollTop ||
-          document.body.scrollTop;
-        //指定dom到页面顶端的距离
-        let dom = document.getElementById(domId);
-        let domHeight = dom.offsetTop + 10;
-        //滚动距离计算
-        var S = Number(height) - Number(domHeight);
-        //判断上滚还是下滚
-        if (S < 0) {
-          //下滚
-          S = Math.abs(S);
-          window.scrollBy({ top: S, behavior: "smooth" });
-        } else if (S == 0) {
-          //不滚
-          window.scrollBy({ top: 0, behavior: "smooth" });
+      var that = this;
+      if (index != "4") {
+        if (that.$route.path == "/content") {
+          // 当前窗口正中心位置到指定dom位置的距离
+          //页面滚动了的距离
+          let height =
+            window.pageYOffset ||
+            document.documentElement.scrollTop ||
+            document.body.scrollTop;
+          //指定dom到页面顶端的距离
+          let dom = document.getElementById(domId);
+          let domHeight = dom.offsetTop + 10;
+          //滚动距离计算
+          var S = Number(height) - Number(domHeight);
+          //判断上滚还是下滚
+          if (S < 0) {
+            //下滚
+            S = Math.abs(S);
+            window.scrollBy({ top: S, behavior: "smooth" });
+          } else if (S == 0) {
+            //不滚
+            window.scrollBy({ top: 0, behavior: "smooth" });
+          } else {
+            //上滚
+            S = -S;
+            window.scrollBy({ top: S, behavior: "smooth" });
+          }
+          that.selectItem = index;
         } else {
-          //上滚
-          S = -S;
-          window.scrollBy({ top: S, behavior: "smooth" });
+          that.selectItem = index;
+          that.$router.push({ path: "/content" });
         }
-        this.selectItem = index
+      } else {
+        that.selectItem = index;
+        that.$router.push({ path: "/myself" });
       }
     }
   }
