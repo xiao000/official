@@ -8,21 +8,22 @@
           <div class="logoImg">
              <img class="logo" :src="logo" alt="比特云算" />
           </div>
-          <div>矿机分时共享综合服务商</div>
+          <div class="logoTxt">矿机分时共享综合服务商</div>
         </el-col>
         <el-col :span="8">
           <h3 style="text-align: left;">关注我们</h3>
           <el-row :gutter="10">
-            <el-col :span="4">微信</el-col>
-            <el-col :span="4">微博</el-col>
-            <el-col :span="4">微信</el-col>
-            <el-col :span="4">微信</el-col>
-            <el-col :span="4">微信</el-col>
+            <el-col :span="4"><img :src="wx" alt="微信"></el-col>
+            <el-col :span="4"><img :src="wb" alt="微博"></el-col>
+            <el-col :span="4"><img :src="facebook" alt="facebook"></el-col>
+            <el-col :span="4"><img :src="Twitter" alt="Twitter"></el-col>
+            <el-col :span="4"><img :src="airplane" alt="airplane"></el-col>
           </el-row>
         </el-col>
         <el-col :span="8">
           <h3 style="text-align: left;">关注我们</h3>
-          <div class="codeImg"></div>
+          <div class="codeImg">
+          </div>
         </el-col>
       </el-row>
     </div>
@@ -55,11 +56,14 @@ export default {
 </script>
 <style scoped>
 .footMain {
-  padding: 20px 0;
-  height: 200px;
+  padding: 49px 0 20px;
+  height: 388px;
   background-color: #000;
   color: #fff;
 }
+.logoTxt{font-size: 16px;}
+h3{margin-top: 0;}
+.backmost{background-color: #000;font-size: 14px;margin:0;padding-bottom: 8px;color: #fff;}
 /* .backmost {
   text-align: center;
   color: #aaa;

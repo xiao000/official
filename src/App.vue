@@ -18,6 +18,7 @@ body{padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #000;
 }
+#app .el-main{padding: 0 20px 20px 20px;}
 </style>

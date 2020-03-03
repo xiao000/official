@@ -1,23 +1,43 @@
 <template>
     <!-- 合作伙伴 -->
     <div class="partner">
-        <el-row :gutter="20">
-            <el-col :span="4"><h2>合作伙伴</h2></el-col>
-            <template v-for="(item,index) in items">
-            <el-col :span="4" :key="index"><h5>{{item}}</h5></el-col>
-            </template>
+      <el-row><el-col :span="24"><h1>合作伙伴</h1></el-col></el-row>
+        <el-row :gutter="20" type="flex" class="row-bg" justify="center">
+            <el-col :span="4"><img :src="partner1" alt="partner1"></el-col>
+            <el-col :span="4"><img :src="partner2" alt="partner2"></el-col>
+            <el-col :span="4"><img :src="partner3" alt="partner3"></el-col>
+            <el-col :span="4"><img :src="partner4" alt="partner4"></el-col>
+            <el-col :span="4"><img :src="partner5" alt="partner5"></el-col>
         </el-row>
     </div>
 </template>
 <script>
+import partner1 from "@/assets/img/partner1.png";
+import partner2 from "@/assets/img/partner2.png";
+import partner3 from "@/assets/img/partner3.png";
+import partner4 from "@/assets/img/partner4.png";
+import partner5 from "@/assets/img/partner5.png";
 export default {
   data() {
     return {
-      items: ["合作伙伴1", "合作伙伴2", "合作伙伴3", "合作伙伴4","合作伙伴5"]
+      partner1:partner1, partner2:partner2,
+       partner3:partner3,partner4:partner4,partner5:partner5
     };
   },
 };
 </script>
 <style scoped>
-.partner{border-bottom: 0.5px dashed #DEE1E6;border-top:0.5px dashed #DEE1E6;}
+.partner{
+  height: 285px;
+  background-color: #FAFAFA;
+  }
+.partner img {
+    	width:auto;
+        height:auto;
+        max-width:100%;
+        max-height:100%;
+		}
+    h1{
+  font-size: 36px;
+}
 </style>

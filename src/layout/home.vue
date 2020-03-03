@@ -2,7 +2,7 @@
   <!-- 主页面 -->
   <el-container>
     <div class="home el-scrollbar" ref="home">
-      <el-header>
+      <el-header> 
         <head-nav></head-nav>
       </el-header>
       <el-main>
@@ -10,9 +10,11 @@
             <router-view></router-view>
         </div>
       </el-main>
+      <el-footer>
       <div class="indFooter">
         <footerNav></footerNav>
       </div>
+      </el-footer>
       <backTop :ele="$refs.home"></backTop>
     </div>
   </el-container>

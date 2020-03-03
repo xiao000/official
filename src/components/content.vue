@@ -2,14 +2,10 @@
    
     <div class="main">
          <!-- 走马灯 -->
-        <carousel></carousel>
-        <hr>
-        <business></business>
-        <hr>
+        <!-- <carousel></carousel> -->
         <cloud></cloud>
-        <hr>
         <advantage></advantage>
-        <hr>
+         <business></business>
         <download-app></download-app>
     </div>
 </template>
@@ -30,7 +26,5 @@ export default {
 }
 </script>
 <style scoped>
-hr{
-    border:0.5px dashed #DEE1E6;margin:20px 0
-}
+
 </style>

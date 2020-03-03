@@ -1,20 +1,38 @@
 <template>
     <!-- 下载APP -->
     <div id="downloadApp">
-        <el-row :gutter="30">
-            <el-col :span="4" :offset="8">
-                <div class="phoneLogo"></div>
+        <el-row>
+            <el-col :md="8" :offset="4">
+                <div class="phoneLogo">
+                    <img :src="phoneLogo" alt="手机">
+                </div>
             </el-col>
-            <el-col :span="4" :offset="1">
-                <div class="codeApp">扫码下载APP</div>
-                <div class="appLogo"></div>
+            <el-col :md="11">
+                <div class="lodApp">
+                    <div class="codeApp">扫码下载APP</div>
+                    <div class="appLogo">
+                        <img :src="phoneLogo" alt="手机">
+                    </div>
+                </div>
             </el-col>
         </el-row>
     </div>
 </template>
+<script>
+import phone from "@/assets/img/phone.png";
+export default {
+  data(){
+    return { 
+      phoneLogo: phone
+      }
+  }
+}
+</script>
 <style scoped>
-#downloadApp{text-align: center;}
-.codeApp{height: 50px; line-height: 50px; width: 200px;}
-.phoneLogo{width: 200px;height: 300px;background-color: cadetblue;}
-.appLogo{width: 200px;height: 200px;background-color: cadetblue;}
+#downloadApp{
+    background: url(../assets/img/bj.png) no-repeat center top;
+    }
+.lodApp{padding: 140px;}
+.codeApp{height: 50px; line-height: 50px;font-size: 46px;}
+.appLogo img{width: 395px;height: 395px;}
 </style>

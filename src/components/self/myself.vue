@@ -2,9 +2,8 @@
     <div class="main">
          <!-- 关于我们 -->
         <self-img></self-img>
-        <hr>
+        
         <about-us></about-us>
-        <hr>
         <contact-us></contact-us>
         
     </div>
@@ -22,7 +21,5 @@ export default {
 }
 </script>
 <style scoped>
-hr{
-    border:0.5px dashed #DEE1E6;margin:20px 0
-}
+.main{background-color: #FAFAFC;}
 </style>

@@ -29,8 +29,8 @@ export default {
       selectItem: 0,
       items: [
         { domId: "block", name: "首页" },
-        { domId: "business", name: "业务范围" },
         { domId: "cloud", name: "云算力" },
+        { domId: "business", name: "业务范围" },
         { domId: "downloadApp", name: "下载APP" },
         { domId: "block", name: "关于我们" }
       ]
@@ -90,8 +90,9 @@ export default {
 .logoImg img{vertical-align:middle;}
 
 .handMain {
-  background-color: #000000;
+  background-color: #333;
   color: #ffffff;
+  border-bottom: 1px solid #333;
 }
 
 .handMain ul {
@@ -103,11 +104,12 @@ export default {
 }
 .handMain ul li {
   list-style: none;
-  width: 100px;
-  height: 115px;
-  line-height: 115px;
-  font-size: 20px;
+  width: 88px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 18px;
   padding: 0 10px;
+  margin: auto 8px;
 }
 .handMain ul li a {
   display: block;
