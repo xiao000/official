@@ -66,7 +66,4 @@ export default {
 <style scoped>
 #advantage{background-color: #FAFAFA; margin-bottom: 20px;}
 .row-bg{padding-bottom: 90px;}
-h1{
-  font-size: 36px;
-}
 </style>

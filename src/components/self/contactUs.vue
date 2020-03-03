@@ -17,7 +17,6 @@
 </template>
 <style scoped>
 .contactUs{height: 500px;}
-h1{font-size: 36px;}
 h2{font-size: 26px;}
 .syhz,.khfw{line-height: 78px;text-align: left;}
 .khfw div{ display: inline-block;width: 100px;height: 100px;border: 1px solid #CCCBCE;margin-right: 18px;}

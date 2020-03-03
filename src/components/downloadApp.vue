@@ -11,7 +11,7 @@
                 <div class="lodApp">
                     <div class="codeApp">扫码下载APP</div>
                     <div class="appLogo">
-                        <img :src="phoneLogo" alt="手机">
+                        <!-- <img :src="phoneLogo" alt="手机"> -->
                     </div>
                 </div>
             </el-col>

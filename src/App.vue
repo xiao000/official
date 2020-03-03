@@ -21,4 +21,13 @@ body{padding: 0;
   color: #000;
 }
 #app .el-main{padding: 0 20px 20px 20px;}
+#app img {
+    	  width:auto;
+        height:auto;
+        max-width:100%;
+        max-height:100%;
+		}
+#app  h1{
+  font-size: 36px;
+}
 </style>

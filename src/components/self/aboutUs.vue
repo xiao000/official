@@ -12,6 +12,5 @@
  
 </template>
 <style scoped>
-h1{font-size: 36px;}
 p{text-indent:2em;line-height:1.5em;text-align: left;} 
 </style>

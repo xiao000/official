@@ -8,7 +8,7 @@
         <span class="cloudTxt">购买算力套餐</span>
       </el-col>
       <el-col :span="5">
-        <div class="arrow">
+        <div class="arrow animated fadeInLeft">
           <img :src="arrow2" alt="1">
         </div>
       </el-col>
@@ -19,20 +19,21 @@
     </el-row>
     <el-row type="flex" class="row-bg" justify="end">
       <el-col :span="15">
-        <el-row type="flex" class="row-bg platform" justify="center" align="middle">
-          <el-col :span="4"><img :src="pt1" alt=""></el-col>
-          <el-col :span="2"><div class="blueArrow"></div></el-col>
-          <el-col :span="4"><img :src="pt2" alt=""></el-col>
-          <el-col :span="2"><div class="blueArrow"></div></el-col>
-          <el-col :span="4"><img :src="pt3" alt=""></el-col>
-          <el-col :span="2"><div class="blueArrow"></div></el-col>
-          <el-col :span="4"><img :src="pt4" alt=""></el-col>
+        <el-row type="flex" class="row-bg platform animated bounce" justify="center" align="middle">
+          <el-col :span="3" class="pt1Animat animated fadeInLeft"><img :src="pt1" alt=""><span>采购矿机</span></el-col>
+          <el-col :span="2" class="pt2Animat animated fadeInLeft"><div class="blueArrow"></div></el-col>
+          <el-col :span="3" class="pt3Animat animated fadeInLeft"><img :src="pt2" alt=""><span>运输至矿场</span></el-col>
+          <el-col :span="2" class="pt4Animat animated fadeInLeft"><div class="blueArrow"></div></el-col>
+          <el-col :span="3" class="pt5Animat animated fadeInLeft"><img :src="pt3" alt=""><span>调试矿机联通矿池</span></el-col>
+          <el-col :span="2" class="pt6Animat animated fadeInLeft"><div class="blueArrow"></div></el-col>
+          <el-col :span="3" class="pt7Animat animated fadeInLeft"><img :src="pt4" alt=""><span>矿机运维</span></el-col>
+          <div class="dottedArrow"></div>
         </el-row>
         </el-col>
     </el-row>
       <el-row>
      <el-col :span="5" :offset="15">
-        <div class="arrowt">
+        <div class="arrowt animated fadeInDown">
           <img :src="arrow2" alt="1">
         </div>
       </el-col>
@@ -43,7 +44,7 @@
         <span class="cloudTxt">分配收益给用户</span>
       </el-col>
       <el-col :span="5">
-        <div class="arrow">
+        <div class="arrowl animated fadeInRight">
           <img :src="arrow2" alt="1">
         </div>
       </el-col>
@@ -83,10 +84,39 @@ export default {
 </script>
 <style type="text/css3" scoped>
 #cloud{background-color: #FAFAFA;margin-bottom: 20px;}
-h1{font-size: 36px;}
 .cloudTxt{font-size: 26px;}
-.arrow{line-height: 445px;}
-.platform{border: 1px dashed #DDDDDD; width: 857px;height: 239px;}
+.arrow,.arrowl{line-height: 445px;}
+.arrowt img{transform: rotate(90deg);}
+.arrowl,.arrowt,.arrow,.pt1Animat,.pt2Animat,
+.pt3Animat,.pt4Animat,.pt5Animat,.pt6Animat,.pt7Animat{animation-iteration-count:1000;animation-duration:6.5s}
+.arrowl img{transform: rotate(180deg);}
+/* .pt1Animat{animation-delay:1s;}
+.pt2Animat{animation-delay:4.5s;}
+.pt3Animat{animation-delay:8s;}
+.pt4Animat{animation-delay:11.5s;}
+.pt5Animat{animation-delay:15s;}
+.pt6Animat{animation-delay:18.5s;}
+.pt7Animat{animation-delay:22s;} */
+.platform{position: relative;border: 1px dashed #DDDDDD; width: 857px;height: 239px;margin: 30px 0;}
+.platform span{font-size: 16px;}
+.dottedArrow{
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -60px;
+    left: 600px;
+    border: 30px dashed;
+    border-color: transparent transparent #DDDDDD transparent;
+    margin-left: 20px;
+}
+.dottedArrow::after{
+    content: '';
+    position: absolute;
+    top: -28px;
+    left: -30px;
+    border: 30px solid;
+    border-color: transparent transparent #FAFAFA transparent ;
+}
 .blueArrow{
     width: 0;
     height: 0;
@@ -101,6 +131,5 @@ h1{font-size: 36px;}
     border: 25px solid;
     border-color: transparent transparent transparent #FAFAFA;
 }
-/* .arrowt,.arrowt img{width: 81px;height: 115px;} */
-/* .arrowt img{transform: rotateY(90deg);} */
+
 </style>

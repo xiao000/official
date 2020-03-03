@@ -31,13 +31,4 @@ export default {
   height: 285px;
   background-color: #FAFAFA;
   }
-.partner img {
-    	width:auto;
-        height:auto;
-        max-width:100%;
-        max-height:100%;
-		}
-    h1{
-  font-size: 36px;
-}
 </style>

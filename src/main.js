@@ -9,8 +9,9 @@ import("./style/font.css");
 import animated from 'animate.css' ;
 
 
-Vue.use(animated);
+
 Vue.use(ElementUI);
+Vue.use(animated);
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
