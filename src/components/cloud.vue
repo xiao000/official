@@ -8,18 +8,18 @@
         <span class="cloudTxt">购买算力套餐</span>
       </el-col>
       <el-col :span="5">
-        <div class="arrow animated fadeInLeft">
+        <div class="arrow">
           <img :src="arrow2" alt="1">
         </div>
       </el-col>
-      <el-col :span="6">
+      <el-col :span="6" class="btCloud">
         <img :src="cloud2" alt="1">
         <span class="cloudTxt">比特云算平台</span>
       </el-col>
     </el-row>
-    <el-row type="flex" class="row-bg" justify="end">
-      <el-col :span="15">
-        <el-row type="flex" class="row-bg platform animated bounce" justify="center" align="middle">
+    <el-row type="flex" class="row-bg" justify="center">
+      <el-col :span="13">
+        <el-row type="flex" class="row-bg platform" justify="center" align="middle">
           <el-col :span="3" class="pt1Animat animated fadeInLeft"><img :src="pt1" alt=""><span>采购矿机</span></el-col>
           <el-col :span="2" class="pt2Animat animated fadeInLeft"><div class="blueArrow"></div></el-col>
           <el-col :span="3" class="pt3Animat animated fadeInLeft"><img :src="pt2" alt=""><span>运输至矿场</span></el-col>
@@ -87,17 +87,23 @@ export default {
 .cloudTxt{font-size: 26px;}
 .arrow,.arrowl{line-height: 445px;}
 .arrowt img{transform: rotate(90deg);}
-.arrowl,.arrowt,.arrow,.pt1Animat,.pt2Animat,
-.pt3Animat,.pt4Animat,.pt5Animat,.pt6Animat,.pt7Animat{animation-iteration-count:1000;animation-duration:6.5s}
+.arrow{animation: dropdown 3s linear infinite;}
+@keyframes dropdown {
+    0% {opacity: 0;left: -388px;}
+   50% {opacity: 0.5;left: 0px;}
+  100% {opacity: 1; left: 388px;}
+  }
+.pt1Animat,.pt2Animat,.pt3Animat,.pt4Animat,.pt5Animat,.pt6Animat,.pt7Animat{
+  animation-iteration-count:infinite;animation-duration:6.5s;
+  -webkit-animation-iteration-count:infinite;-webkit-animation-duration:4.5s;
+  }
+  .arrowl,.arrowt{
+    animation-iteration-count:infinite;animation-duration:8.5s;
+  -webkit-animation-iteration-count:infinite;-webkit-animation-duration:8.5s;
+
+  }
 .arrowl img{transform: rotate(180deg);}
-/* .pt1Animat{animation-delay:1s;}
-.pt2Animat{animation-delay:4.5s;}
-.pt3Animat{animation-delay:8s;}
-.pt4Animat{animation-delay:11.5s;}
-.pt5Animat{animation-delay:15s;}
-.pt6Animat{animation-delay:18.5s;}
-.pt7Animat{animation-delay:22s;} */
-.platform{position: relative;border: 1px dashed #DDDDDD; width: 857px;height: 239px;margin: 30px 0;}
+.platform{position: relative;border: 1px dashed #DDDDDD;margin: 30px 0;}
 .platform span{font-size: 16px;}
 .dottedArrow{
     position: absolute;

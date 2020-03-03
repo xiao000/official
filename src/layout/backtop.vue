@@ -19,7 +19,9 @@ export default {
     return {
       opacity: ".3",
       gotop: false,
-      scrollHeight:15
+      scrollHeight:15,
+      scrollTop: null //初始化scrollTop
+
     };
   },
   props: ["ele"],
@@ -28,6 +30,9 @@ export default {
     // 此处true需要加上，不加滚动事件可能绑定不成功
     window.addEventListener("scroll", this.handleScroll, true);
   },
+  destroyed() {
+      window.removeEventListener('scroll', this.handleScroll, true);
+    },
   methods: {
     enterBackTop() {
       this.opacity = "1";
@@ -36,13 +41,30 @@ export default {
       this.opacity = ".3";
     },
     handleScroll() {
-      let scrolltop = document.documentElement.scrollTop;
-      scrolltop > this.scrollHeight? (this.gotop = true):(this.gotop = false);
+       this.scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+        if (this.scrollTop > 500) {
+          this.gotop = true
+        } else {
+          this.gotop = false
+        }
     },
     handleScrollTop() {
-      this.$nextTick(() => {
-        document.documentElement.scrollTop=0;
-      });
+      // this.$nextTick(() => {
+      //   document.documentElement.scrollTop=0;
+      // });
+      let timer = null,
+          that = this
+        cancelAnimationFrame(timer)
+        timer = requestAnimationFrame(function fn() {
+          if (that.scrollTop > 0) {
+            that.scrollTop -= 50
+            document.body.scrollTop = document.documentElement.scrollTop = that.scrollTop;
+            timer = requestAnimationFrame(fn)
+          } else {
+            cancelAnimationFrame(timer);
+            that.visiable = false;
+          }
+        })
     }
   }
 };
