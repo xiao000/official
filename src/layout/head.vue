@@ -2,13 +2,10 @@
   <div class="handMain">
     <el-row>
       <el-col :span="10">
-        <el-col :md="10" :sm="10" :offset="2">
-          <!-- LOGO图 -->
-          <div class="logoImg"></div>
-        </el-col>
-        <el-col :md="8" :sm="12">
-          <span class="logoText">买算力，更便宜！</span>
-        </el-col>
+          <div class="logoImg">
+            <img class="logo" :src="logo" alt="比特云算" />
+          </div>
+       
       </el-col>
       <el-col :md="14" :sm="24">
         <ul class="el-menu-demo" mode="horizontal">
@@ -24,9 +21,11 @@
   </div>
 </template>
 <script>
+import logoImg from "@/assets/home/logo1.png";
 export default {
   data() {
     return {
+      logo: logoImg,
       selectItem: 0,
       items: [
         { domId: "block", name: "首页" },
@@ -81,18 +80,18 @@ export default {
 </script>
 
 <style scoped>
-.logoImg {
+.logoImg{
   display: inline-block;
   width: 100%;
   height: 90px;
-  background-color: #999;
+  line-height: 90px;
   margin: 10px 0;
 }
-.logoText {
-  line-height: 115px;
-}
+.logoImg img{vertical-align:middle;}
+
 .handMain {
-  border-bottom: 1px solid #dfdfdf;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .handMain ul {
@@ -119,6 +118,7 @@ export default {
 .handMain ul li.active,
 .handMain ul li:hover {
   border: none;
-  color: #ff6a00;
+  /* color: #ff6a00; */
+  background-color: #ff6a00;
 }
 </style>

@@ -5,7 +5,9 @@
     <div class="footMain">
       <el-row>
         <el-col :span="8">
-          <div class="logoImg"></div>
+          <div class="logoImg">
+             <img class="logo" :src="logo" alt="比特云算" />
+          </div>
           <div>矿机分时共享综合服务商</div>
         </el-col>
         <el-col :span="8">
@@ -29,8 +31,23 @@
 </template>
 <script>
 import Partner from "@/components/partner";
-
+import logoImg from "@/assets/home/logo1.png";
+import wx from "@/assets/home/wx.png";
+import wb from "@/assets/home/wb.png";
+import facebook from "@/assets/home/facebook.png";
+import Twitter from "@/assets/home/Twitter.png";
+import airplane from "@/assets/home/airplane.png";
 export default {
+  data(){
+    return { 
+      logo: logoImg,
+      wx:wx,
+      wb:wb,
+      facebook:facebook,
+      Twitter:Twitter,
+      airplane:airplane
+    }
+  },
   components: {
     Partner
   }
@@ -40,12 +57,14 @@ export default {
 .footMain {
   padding: 20px 0;
   height: 200px;
+  background-color: #000;
+  color: #fff;
 }
-.backmost {
+/* .backmost {
   text-align: center;
   color: #aaa;
   line-height: 30px;
   font-size: 12px;
   border-top: 0.5px solid #DEE1E6;
-}
+} */
 </style>
