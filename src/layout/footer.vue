@@ -31,12 +31,12 @@
 </template>
 <script>
 import Partner from "@/components/partner";
-import logoImg from "@/assets/home/logo1.png";
-import wx from "@/assets/home/wx.png";
-import wb from "@/assets/home/wb.png";
-import facebook from "@/assets/home/facebook.png";
-import Twitter from "@/assets/home/Twitter.png";
-import airplane from "@/assets/home/airplane.png";
+import logoImg from "@/assets/img/logo1.png";
+import wx from "@/assets/img/wx.png";
+import wb from "@/assets/img/wb.png";
+import facebook from "@/assets/img/facebook.png";
+import Twitter from "@/assets/img/Twitter.png";
+import airplane from "@/assets/img/airplane.png";
 export default {
   data(){
     return { 

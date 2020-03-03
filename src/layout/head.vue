@@ -21,7 +21,7 @@
   </div>
 </template>
 <script>
-import logoImg from "@/assets/home/logo1.png";
+import logoImg from "@/assets/img/logo1.png";
 export default {
   data() {
     return {
