@@ -31,6 +31,7 @@ export default {
 <style scoped>
 #downloadApp{
     background: url(../assets/img/bj.png) no-repeat center top;
+    background-size: 100% 100%;
     }
 .lodApp{padding: 140px;}
 .codeApp{height: 50px; line-height: 50px;font-size: 46px;}
