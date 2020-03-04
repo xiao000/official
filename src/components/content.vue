@@ -2,7 +2,7 @@
    
     <div class="main">
          <!-- 走马灯 -->
-        <!-- <carousel></carousel> -->
+        <carousel></carousel>
         <cloud></cloud>
         <advantage></advantage>
          <business></business>

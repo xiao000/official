@@ -11,7 +11,7 @@
           <div class="logoTxt">矿机分时共享综合服务商</div>
         </el-col>
         <el-col :span="8">
-          <h3 style="text-align: left;">关注我们</h3>
+          <h3 style="text-align: left;">关于我们</h3>
           <el-row :gutter="10">
             <el-col :span="4"><img :src="wx" alt="微信"></el-col>
             <el-col :span="4"><img :src="wb" alt="微博"></el-col>
@@ -21,7 +21,7 @@
           </el-row>
         </el-col>
         <el-col :span="8">
-          <h3 style="text-align: left;">关注我们</h3>
+          <h3 style="text-align: left;">联系我们</h3>
           <div class="codeImg">
           </div>
         </el-col>
@@ -63,11 +63,11 @@ export default {
 .footMain {
   padding: 49px 0 20px;
   height: 388px;
-  background-color: #000;
+  background-color: #333;
   color: #fff;
 }
 .logoTxt{font-size: 16px;}
-h3{margin-top: 0;}
-.backmost{background-color: #000;font-size: 14px;margin:0;padding-bottom: 8px;color: #fff;}
+h3{margin-top: 0; font-size: 26px;}
+.backmost{background-color: #333;font-size: 14px;margin:0;padding-bottom: 8px;color: #fff;}
 
 </style>

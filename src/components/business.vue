@@ -6,7 +6,8 @@
       <template v-for="(item, index) in items">
         <el-col :span="5" :key="index">
           <div class="img">
-            <img :src="item.imgVal" :alt="index"></div>
+            <img :src="item.imgVal" :alt="index">
+            </div>
           <h3>{{item.title}}</h3>
           <span>{{item.text}}</span>
         </el-col>
