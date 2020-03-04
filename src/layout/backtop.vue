@@ -20,7 +20,7 @@ export default {
       opacity: ".3",
       gotop: false,
       scrollHeight:15,
-      scrollTop: null //初始化scrollTop
+      // scrollTop: null //初始化scrollTop
 
     };
   },
@@ -62,7 +62,7 @@ export default {
             timer = requestAnimationFrame(fn)
           } else {
             cancelAnimationFrame(timer);
-            that.visiable = false;
+            that.gotop = false;
           }
         })
     }

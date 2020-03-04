@@ -25,9 +25,14 @@
           <div class="codeImg">
           </div>
         </el-col>
+        
       </el-row>
     </div>
-    <p class="backmost">Copyright © 2018-2020 www.hashsl.com 粤ICP备18083800号-1</p>
+    <el-row>
+     <el-col :span="24">
+        <p class="backmost">Copyright © 2018-2020 www.hashsl.com 粤ICP备18083800号-1</p>
+      </el-col>
+    </el-row>
   </div>
 </template>
 <script>
@@ -64,11 +69,5 @@ export default {
 .logoTxt{font-size: 16px;}
 h3{margin-top: 0;}
 .backmost{background-color: #000;font-size: 14px;margin:0;padding-bottom: 8px;color: #fff;}
-/* .backmost {
-  text-align: center;
-  color: #aaa;
-  line-height: 30px;
-  font-size: 12px;
-  border-top: 0.5px solid #DEE1E6;
-} */
+
 </style>
