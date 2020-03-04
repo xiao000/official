@@ -55,7 +55,7 @@
     </el-row>
     <el-row>
       <el-col :span="5" :offset="15">
-        <div class="arrowt animated fadeInDown">
+        <div class="arrowt">
           <img :src="arrow2" alt="1" />
         </div>
       </el-col>
@@ -66,7 +66,7 @@
         <span class="cloudTxt">分配收益给用户</span>
       </el-col>
       <el-col :span="5">
-        <div class="arrowl animated fadeInRight">
+        <div class="arrowl">
           <img :src="arrow2" alt="1" />
         </div>
       </el-col>
@@ -123,18 +123,23 @@ export default {
   position: relative;
   animation: arrowRight 3s linear infinite;
 }
+
 @keyframes arrowRight {
   0% {
     opacity: 0;
-    left: -38px;
+    left: -58px;
   }
   20% {
-    opacity: 0.5;
+    opacity: 0.33;
+    left: -38px;
+  }
+  40% {
+    opacity: 0.66;
     left: -18px;
   }
-  50% {
-    opacity: 1;
-    left: 0px;
+  60% {
+    opacity: 0.8;
+    left: 8px;
   }
   80% {
     opacity: 0.5;
@@ -146,17 +151,21 @@ export default {
   }
 }
 @-webkit-keyframes arrowRight {
-  0% {
+   0% {
     opacity: 0;
-    left: -38px;
+    left: -58px;
   }
   20% {
-    opacity: 0.5;
+    opacity: 0.33;
+    left: -38px;
+  }
+  40% {
+    opacity: 0.66;
     left: -18px;
   }
-  50% {
-    opacity: 1;
-    left: 0px;
+  60% {
+    opacity: 0.8;
+    left: 8px;
   }
   80% {
     opacity: 0.5;
@@ -170,15 +179,19 @@ export default {
 @-moz-keyframes  arrowRight {
   0% {
     opacity: 0;
-    left: -38px;
+    left: -58px;
   }
   20% {
-    opacity: 0.5;
+    opacity: 0.33;
+    left: -38px;
+  }
+  40% {
+    opacity: 0.66;
     left: -18px;
   }
-  50% {
-    opacity: 1;
-    left: 0px;
+  60% {
+    opacity: 0.8;
+    left: 8px;
   }
   80% {
     opacity: 0.5;
@@ -187,6 +200,170 @@ export default {
   100% {
     opacity: 0;
     left: 58px;
+  }
+}
+.arrowt {
+  position: relative;
+  animation: arrowDown 3s linear infinite;
+}
+@keyframes arrowDown {
+  0% {
+    opacity: 0;
+    top: -58px;
+  }
+  20% {
+    opacity: 0.33;
+    top: -38px;
+  }
+  40% {
+    opacity: 0.66;
+    top: -18px;
+  }
+  60% {
+    opacity: 0.8;
+    top: 8px;
+  }
+  80% {
+    opacity: 0.5;
+    top: 28px;
+  }
+  100% {
+    opacity: 0;
+    top: 58px;
+  }
+}
+@-webkit-keyframes arrowDown {
+  0% {
+    opacity: 0;
+    top: -58px;
+  }
+  20% {
+    opacity: 0.33;
+    top: -38px;
+  }
+  40% {
+    opacity: 0.66;
+    top: -18px;
+  }
+  60% {
+    opacity: 0.8;
+    top: 8px;
+  }
+  80% {
+    opacity: 0.5;
+    top: 28px;
+  }
+  100% {
+    opacity: 0;
+    top: 58px;
+  }
+}
+@-moz-keyframes arrowDown {
+  0% {
+    opacity: 0;
+    top: -58px;
+  }
+  20% {
+    opacity: 0.33;
+    top: -38px;
+  }
+  40% {
+    opacity: 0.66;
+    top: -18px;
+  }
+  60% {
+    opacity: 0.8;
+    top: 8px;
+  }
+  80% {
+    opacity: 0.5;
+    top: 28px;
+  }
+  100% {
+    opacity: 0;
+    top: 58px;
+  }
+}
+.arrowl {
+  position: relative;
+  animation: arrowLeft 3s linear infinite;
+}
+@keyframes arrowLeft {
+  0% {
+    opacity: 0;
+    right: -58px;
+  }
+  20% {
+    opacity: 0.33;
+    right: -38px;
+  }
+  40% {
+    opacity: 0.66;
+    right: -18px;
+  }
+  60% {
+    opacity: 0.8;
+    right: 8px;
+  }
+  80% {
+    opacity: 0.5;
+    right: 28px;
+  }
+  100% {
+    opacity: 0;
+    right: 58px;
+  }
+}
+@-webkit-keyframes arrowLeft {
+  0% {
+    opacity: 0;
+    right: -58px;
+  }
+  20% {
+    opacity: 0.33;
+    right: -38px;
+  }
+  40% {
+    opacity: 0.66;
+    right: -18px;
+  }
+  60% {
+    opacity: 0.8;
+    right: 8px;
+  }
+  80% {
+    opacity: 0.5;
+    right: 28px;
+  }
+  100% {
+    opacity: 0;
+    right: 58px;
+  }
+}
+@-moz-keyframes arrowLeft {
+  0% {
+    opacity: 0;
+    right: -58px;
+  }
+  20% {
+    opacity: 0.33;
+    right: -38px;
+  }
+  40% {
+    opacity: 0.66;
+    right: -18px;
+  }
+  60% {
+    opacity: 0.8;
+    right: 8px;
+  }
+  80% {
+    opacity: 0.5;
+    right: 28px;
+  }
+  100% {
+    opacity: 0;
+    right: 58px;
   }
 }
 .pt1Animat,
@@ -199,18 +376,18 @@ export default {
   /* 定义动画的播放次数。infinite */
   animation-iteration-count: 1;
   /* 动画指定需要多少秒或毫秒完成 */
-  animation-duration: 2.5s;
+  animation-duration: 2s;
   -webkit-animation-iteration-count: 1;
-  -webkit-animation-duration: 2.5s;
+  -webkit-animation-duration: 2s;
 }
 /* animation-delay设置动画在启动前的延迟间隔。 */
 .pt1Animat{animation-delay:1s;}
-.pt2Animat{animation-delay:1.5s;}
-.pt3Animat{animation-delay:5s;}
-.pt4Animat{animation-delay:7.5s;}
-.pt5Animat{animation-delay:10s;}
-.pt6Animat{animation-delay:12.5s;}
-.pt7Animat{animation-delay:15s;}
+.pt2Animat{animation-delay:2s;}
+.pt3Animat{animation-delay:3s;}
+.pt4Animat{animation-delay:4s;}
+.pt5Animat{animation-delay:5s;}
+.pt6Animat{animation-delay:6s;}
+.pt7Animat{animation-delay:7s;}
 .arrowl,
 .arrowt {
   animation-iteration-count: infinite;
