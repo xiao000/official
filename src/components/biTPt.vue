@@ -1,80 +1,109 @@
 <template>
-<div class="cloudPTCon">
-  <el-row type="flex" class="row-bg" justify="end">
-    <el-col :span="18" :xs="18">
-    <el-row type="flex" class="row-bg" justify="center" align="bottom">
-         <div class="platform">
-            <el-col ref="pt1Animat" :span="4" class="pt1Animat animated fadeInLeft">
-              <img :src="pt1" alt /><br>
+  <div id="cloudPTCon">
+    <el-row type="flex" class="row-bg" justify="end">
+      <el-col :span="18" :xs="18">
+        <el-row type="flex" class="row-bg" justify="center" align="bottom">
+          <div class="platform">
+            <el-col ref="pt1Animat" :span="4" :class="['pt1Animat animated', { 'fadeInLeft': isAddClass}]">
+              <img :src="pt1" alt />
+              <br />
               <span>采购矿机</span>
             </el-col>
-            <el-col ref="pt2Animat" :span="2" class="pt2Animat animated fadeInLeft">
-              <img :src="pt" alt /><br>
+            <el-col ref="pt2Animat" :span="2" :class="['pt2Animat animated', { 'fadeInLeft': isAddClass}]">
+              <img :src="pt" alt />
+              <br />
             </el-col>
-            <el-col ref="pt3Animat" :span="4" class="pt3Animat animated fadeInLeft">
-              <img :src="pt2" alt /><br>
+            <el-col ref="pt3Animat" :span="4" :class="['pt3Animat animated', { 'fadeInLeft': isAddClass}]">
+              <img :src="pt2" alt />
+              <br />
               <span>运输至矿场</span>
             </el-col>
-            <el-col ref="pt4Animat" :span="2" class="pt4Animat animated fadeInLeft">
-             <img :src="pt" alt /><br>
+            <el-col ref="pt4Animat" :span="2" :class="['pt4Animat animated', { 'fadeInLeft': isAddClass}]">
+              <img :src="pt" alt />
+              <br />
             </el-col>
-            <el-col ref="pt5Animat" :span="4" class="pt5Animat animated fadeInLeft">
-              <img :src="pt3" alt /><br>
+            <el-col ref="pt5Animat" :span="4" :class="['pt5Animat animated', { 'fadeInLeft': isAddClass}]">
+              <img :src="pt3" alt />
+              <br />
               <span>调试矿机联通矿池</span>
             </el-col>
-            <el-col ref="pt6Animat" :span="2" class="pt6Animat animated fadeInLeft">
-             <img :src="pt" alt /><br>
+            <el-col ref="pt6Animat" :span="2" :class="['pt6Animat animated', { 'fadeInLeft': isAddClass}]">
+              <img :src="pt" alt />
+              <br />
             </el-col>
-            <el-col ref="pt7Animat" :span="4" class="pt7Animat animated fadeInLeft">
-              <img :src="pt4" alt /><br>
+            <el-col ref="pt7Animat" :span="4" :class="['pt7Animat animated', { 'fadeInLeft': isAddClass}]">
+              <img :src="pt4" alt />
+              <br />
               <span>矿机运维</span>
             </el-col>
           </div>
         </el-row>
-        </el-col>
-</el-row>
-</div>
+      </el-col>
+    </el-row>
+  </div>
 </template>
 <script>
-
 import pt1 from "../assets/img/pt1.png";
 import pt2 from "../assets/img/pt2.png";
 import pt3 from "../assets/img/pt3.png";
 import pt4 from "../assets/img/pt4.png";
-import pt from "../assets/img/pt.png"
+import pt from "../assets/img/pt.png";
 export default {
-    data(){
-        return{
-            pt1: pt1,
-            pt2: pt2,
-            pt3: pt3,
-            pt4: pt4,
-            pt:pt,
-            flag:false
-        }
+  data() {
+    return {
+      pt1: pt1,
+      pt2: pt2,
+      pt3: pt3,
+      pt4: pt4,
+      pt: pt,
+      // flag: false,
+      isAddClass: false,
+    };
+  },
+  methods: {
+    debounceByLast(key, func, timeout) {
+      const str = `${key}#m6978==`;
+      window[str] && clearTimeout(window[str]);
+      window[str] = setTimeout(() => {
+        func();
+        window[str] = null;
+      }, timeout);
     },
-    methods:{
-      handleScroll(){
-        var scrollTop=window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-        if(scrollTop>=10){
-          this.flag=true;
-          // this.$refs.pt1Animat.classList.add("fadeInLeft");
-          // this.$refs.pt2Animat.classList.add("fadeInLeft");
-          // this.$refs.pt3Animat.classList.add("fadeInLeft");
-          // this.$refs.pt4Animat.classList.add("fadeInLeft");
-          // this.$refs.pt5Animat.classList.add("fadeInLeft");
-          // this.$refs.pt6Animat.classList.add("fadeInLeft");
-          // this.$refs.pt7Animat.classList.add("fadeInLeft");
-        }
+    fadeInLeft() {
+      this.debounceByLast(
+        "bi-tpt",
+        () => {
+          this.addClass();
+        },
+        300
+      );
+    },
+    addClass() {
+      var showId = document.getElementById("cloudPTCon");
+      var clients =
+        window.innerHeight ||
+        document.documentElement.clientHeight ||
+        document.body.clientHeight;
+      var divTop = showId.getBoundingClientRect().top;
+      let that = this;
+      console.log("ID:"+divTop)
+      console.log("clients:"+clients)
+      if (divTop <= clients) {
+        this.isAddClass = true;
+      } else {
+        this.isAddClass = false;
       }
-    },
-    mounted(){
-      window.addEventListener("scroll",this.handleScroll)
     }
-}
+  },
+  mounted() {
+    window.addEventListener("scroll", this.fadeInLeft);
+  }
+};
 </script>
 <style scoped>
-.cloudPTCon{height:242px;}
+#cloudPTCon {
+  height: 242px;
+}
 .pt1Animat,
 .pt2Animat,
 .pt3Animat,
@@ -90,14 +119,27 @@ export default {
   -webkit-animation-duration: 2s;
 }
 /* animation-delay设置动画在启动前的延迟间隔。 */
-.pt1Animat{animation-delay:1s;}
-.pt2Animat{animation-delay:2s;}
-.pt3Animat{animation-delay:3s;}
-.pt4Animat{animation-delay:4s;}
-.pt5Animat{animation-delay:5s;}
-.pt6Animat{animation-delay:6s;}
-.pt7Animat{animation-delay:7s;}
-
+.pt1Animat {
+  animation-delay: 1s;
+}
+.pt2Animat {
+  animation-delay: 2s;
+}
+.pt3Animat {
+  animation-delay: 3s;
+}
+.pt4Animat {
+  animation-delay: 4s;
+}
+.pt5Animat {
+  animation-delay: 5s;
+}
+.pt6Animat {
+  animation-delay: 6s;
+}
+.pt7Animat {
+  animation-delay: 7s;
+}
 
 .platform {
   /* height: 242px; */
