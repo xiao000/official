@@ -6,12 +6,12 @@
         <h1>云算力</h1>
       </el-col>
     </el-row>
-      <el-row :gutter="20"> 
-        <el-col :span="6" :offset="2">
+     <el-row type="flex" class="row-bg" justify="center" align="middle">
+        <el-col :span="6">
               <img :src="cloud1" alt="1" />
               <span class="cloudTxt">购买算力套餐</span>
         </el-col>
-        <el-col :span="6">
+        <el-col :span="6" style="marig">
           <div class="arrow">
             <img :src="arrow2" alt="1" />
           </div>
@@ -29,8 +29,8 @@
         </div>
       </el-col>
     </el-row>
-    <el-row :gutter="20">
-      <el-col :span="6" :offset="2">
+    <el-row type="flex" class="row-bg" justify="center" align="middle">
+      <el-col :span="6">
         <img :src="cloud3" alt="1" />
         <span class="cloudTxt">分配收益给用户</span>
       </el-col>
@@ -53,7 +53,7 @@ import cloud2 from "../assets/img/ysl2.png";
 import cloud3 from "../assets/img/ysl3.png";
 import cloud4 from "../assets/img/ysl4.png";
 import arrow1 from "../assets/img/arrow1.png";
-import arrow2 from "../assets/img/arrow2.png";
+import arrow2 from "../assets/img/arrow22.png";
 import biTiCloudPT from "./biTPt"
 export default {
   data() {

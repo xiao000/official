@@ -74,7 +74,7 @@ export default {
 }
 </script>
 <style scoped>
-.cloudPTCon{height: 28vh;}
+.cloudPTCon{height:242px;}
 .pt1Animat,
 .pt2Animat,
 .pt3Animat,
@@ -103,7 +103,7 @@ export default {
   /* height: 242px; */
   background: url(../assets/img/ptbj.png) no-repeat center center;
   background-size: 100% 100%;
-  margin-right: 8%;
+  margin-left: 8%;
   padding: 35px 6px 6px 45px;
   position: absolute;
   top: 0px;
