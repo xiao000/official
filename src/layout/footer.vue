@@ -67,7 +67,7 @@ export default {
   color: #fff;
 }
 .logoTxt{font-size: 16px;}
-h3{margin-top: 0; font-size: 26px;}
+h3{margin-top: 0; font-size: 26px;font-weight:300;}
 .backmost{background-color: #333;font-size: 14px;margin:0;padding-bottom: 8px;color: #fff;}
 
 </style>

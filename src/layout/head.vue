@@ -4,6 +4,7 @@
       <el-col :span="10">
           <div class="logoImg">
             <img class="logo" :src="logo" alt="比特云算" />
+            <img class="logoImgTxt" :src="logoImgTxt" alt="比特云算" />
           </div>
        
       </el-col>
@@ -21,11 +22,13 @@
   </div>
 </template>
 <script>
-import logoImg from "@/assets/img/logo1.png";
+import logoImg from "@/assets/img/logo.png";
+import logoImgTxt from "@/assets/img/logoTxt.png";
 export default {
   data() {
     return {
       logo: logoImg,
+      logoImgTxt:logoImgTxt,
       selectItem: 0,
       items: [
         { domId: "block", name: "首页" },
@@ -87,7 +90,7 @@ export default {
   line-height: 90px;
   margin: 10px 0;
 }
-.logoImg img{vertical-align:middle;}
+.logoImg img{vertical-align:middle;margin-right:20px; }
 
 .handMain {
   background-color: #333;

@@ -6,9 +6,8 @@
         <h1>云算力</h1>
       </el-col>
     </el-row>
-    <!-- <el-row type="flex" class="row-bg" justify="center"> -->
       <el-row :gutter="20"> 
-        <el-col :span="6" :offset="1">
+        <el-col :span="6" :offset="2">
               <img :src="cloud1" alt="1" />
               <span class="cloudTxt">购买算力套餐</span>
         </el-col>
@@ -22,18 +21,16 @@
           <span class="cloudTxt" id="positionPT">比特云算平台</span>
         </el-col>
     </el-row>
-        <!--  -->
         <biTiCloudPT></biTiCloudPT>
     <el-row>
-      <el-col :span="8" :offset="15">
+      <el-col :span="12" :offset="11">
         <div class="arrowt">
-          <img :src="arrow2" alt="1" />
+          <img :src="arrow1" alt="1" />
         </div>
       </el-col>
     </el-row>
-    <!-- <el-row type="flex" class="row-bg" justify="center"> -->
-      <el-row :gutter="20">
-      <el-col :span="6" :offset="1">
+    <el-row :gutter="20">
+      <el-col :span="6" :offset="2">
         <img :src="cloud3" alt="1" />
         <span class="cloudTxt">分配收益给用户</span>
       </el-col>
@@ -55,6 +52,7 @@ import cloud1 from "../assets/img/ysl1.png";
 import cloud2 from "../assets/img/ysl2.png";
 import cloud3 from "../assets/img/ysl3.png";
 import cloud4 from "../assets/img/ysl4.png";
+import arrow1 from "../assets/img/arrow1.png";
 import arrow2 from "../assets/img/arrow2.png";
 import biTiCloudPT from "./biTPt"
 export default {
@@ -64,6 +62,7 @@ export default {
       cloud2: cloud2,
       cloud3: cloud3,
       cloud4: cloud4,
+      arrow1: arrow1,
       arrow2: arrow2
     };
   },
@@ -75,24 +74,25 @@ export default {
 <style type="text/css3" scoped>
 #cloud {
   background-color: #fafafa;
+  padding-bottom: 90px;
   margin-bottom: 20px;
 }
 .cloudTxt {
   font-size: 26px;
   width: 192px;
 }
-.arrow,.arrowl,.arrowt{
-        width:auto;
+/* .arrow,.arrowl{
         height:auto;
+        width: 25%;
         max-width:100%;
-        max-height:100%;}
-/* .arrow,
-.arrowl {
-  line-height: 445px;
-} */
-.arrowt img {
+        max-height:100%;
+        }   */
+        /* .arrowt img {
   transform: rotate(90deg);
-}
+}  */
+   /* .arrowt{width: auto;height:auto;  max-width:100%;
+        max-height:100%;} */
+
 .arrow {
   position: relative;
   animation: arrowRight 3s linear infinite;
@@ -176,30 +176,30 @@ export default {
     left: 58px;
   }
 }
-.arrowt {
+.arrowt{
   position: relative;
   animation: arrowDown 3s linear infinite;
 }
 @keyframes arrowDown {
   0% {
     opacity: 0;
-    top: -58px;
+    top: -18px;
   }
   20% {
     opacity: 0.33;
-    top: -38px;
+    top: 8px;
   }
   40% {
     opacity: 0.66;
-    top: -18px;
+    top: 18px;
   }
   60% {
     opacity: 0.8;
-    top: 8px;
+    top: 28px;
   }
   80% {
     opacity: 0.5;
-    top: 28px;
+    top: 38px;
   }
   100% {
     opacity: 0;
@@ -207,25 +207,25 @@ export default {
   }
 }
 @-webkit-keyframes arrowDown {
-  0% {
+ 0% {
     opacity: 0;
-    top: -58px;
+    top: -18px;
   }
   20% {
     opacity: 0.33;
-    top: -38px;
+    top: 8px;
   }
   40% {
     opacity: 0.66;
-    top: -18px;
+    top: 18px;
   }
   60% {
     opacity: 0.8;
-    top: 8px;
+    top: 28px;
   }
   80% {
     opacity: 0.5;
-    top: 28px;
+    top: 38px;
   }
   100% {
     opacity: 0;
@@ -233,25 +233,25 @@ export default {
   }
 }
 @-moz-keyframes arrowDown {
-  0% {
+ 0% {
     opacity: 0;
-    top: -58px;
+    top: -18px;
   }
   20% {
     opacity: 0.33;
-    top: -38px;
+    top: 8px;
   }
   40% {
     opacity: 0.66;
-    top: -18px;
+    top: 18px;
   }
   60% {
     opacity: 0.8;
-    top: 8px;
+    top: 28px;
   }
   80% {
     opacity: 0.5;
-    top: 28px;
+    top: 38px;
   }
   100% {
     opacity: 0;
