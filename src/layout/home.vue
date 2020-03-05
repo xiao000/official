@@ -7,7 +7,8 @@
       </el-header>
       <el-main>
         <div class="main">
-            <transition  name="custom-classes-transition"  enter-active-class="animated fadeInDown" leave-active-class="animated fadeInDown" >
+            <!-- <transition  name="custom-classes-transition"  enter-active-class="animated fadeInDown" leave-active-class="animated fadeOutDown" > -->
+       <transition mode="in-out" name="fadee">
         <router-view></router-view>
       </transition>
         </div>

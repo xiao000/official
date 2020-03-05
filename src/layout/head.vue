@@ -125,6 +125,6 @@ export default {
 .handMain ul li:hover {
   border: none;
   /* color: #ff6a00; */
-  background-color: #F45035;
+  background-color: #F55033;
 }
 </style>

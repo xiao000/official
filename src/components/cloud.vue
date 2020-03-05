@@ -11,7 +11,7 @@
               <img :src="cloud1" alt="1" />
               <span class="cloudTxt">购买算力套餐</span>
         </el-col>
-        <el-col :span="6" style="marig">
+        <el-col :span="6">
           <div class="arrow">
             <img :src="arrow2" alt="1" />
           </div>
@@ -23,7 +23,7 @@
     </el-row>
         <biTiCloudPT></biTiCloudPT>
     <el-row>
-      <el-col :span="12" :offset="11">
+      <el-col :span="12" :offset="12">
         <div class="arrowt">
           <img :src="arrow1" alt="1" />
         </div>

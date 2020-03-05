@@ -8,9 +8,10 @@
           <el-col :span="6" :offset="6">
             <img :src="item.imgVal" :alt="item.title">
           </el-col>
-          <el-col :span="10" style="text-align: left;">
+          <el-col :span="10" class="textCl">
             <h3>{{item.title}}</h3>
             <span>{{item.text}}</span>
+              
           </el-col>
         </el-col>
       </template>
@@ -21,7 +22,7 @@
           <el-col :span="6" :offset="6">
             <img :src="item.imgVal" :alt="item.title">
           </el-col>
-          <el-col :span="10" style="text-align: left;">
+          <el-col :span="10" class="textCl">
             <h3>{{item.title}}</h3>
             <span>{{item.text}}</span>
           </el-col>
@@ -66,4 +67,5 @@ export default {
 <style scoped>
 #advantage{background-color: #FAFAFA; margin-bottom: 20px;}
 .row-bg{padding-bottom: 90px;}
+.textCl{text-align: left;padding-top:5%}
 </style>
