@@ -2,12 +2,12 @@
     <!-- 下载APP -->
     <div id="downloadApp">
         <el-row>
-            <el-col :md="8" :offset="4">
+            <el-col :span="8" :offset="4">
                 <div class="phoneLogo">
                     <img :src="phoneLogo" alt="手机">
                 </div>
             </el-col>
-            <el-col :md="11">
+            <el-col :span="12">
                 <div class="lodApp">
                     <div class="codeApp">扫码下载APP</div>
                     <div class="appLogo">
@@ -35,5 +35,9 @@ export default {
     }
 .lodApp{padding: 140px;}
 .codeApp{height: 50px; line-height: 50px;font-size: 46px;}
-.appLogo img{width: 395px;height: 395px;}
+/* .appLogo{background-color: #fff;border: 1px solid #fff;height: 100px;width: 100px;} */
+/* .phoneLogo img{ width:auto;
+        height:auto;
+        max-width:100%;
+        max-height:100%;} */
 </style>

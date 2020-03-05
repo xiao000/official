@@ -3,12 +3,12 @@
   <div class="footer">
     <partner></partner>
     <div class="footMain">
-      <el-row>
-        <el-col :span="8">
-          <div class="logoImg">
-             <img class="logo" :src="logo" alt="比特云算" />
-          </div>
-          <div class="logoTxt">矿机分时共享综合服务商</div>
+      <el-row type="flex" class="row-bg" justify="center">
+        <el-col :span="4" :offset="4">
+            <div class="footLogo">
+              <div class="logoImg"><img class="logo" :src="logo" alt="比特云算"/></div>
+              <div class="logoTxt">矿机分时共享综合服务商</div>
+            </div>
         </el-col>
         <el-col :span="8">
           <h3 style="text-align: left;">关于我们</h3>
@@ -60,6 +60,7 @@ export default {
 };
 </script>
 <style scoped>
+.logoImg img{margin-bottom: 25px;}
 .footMain {
   padding: 49px 0 20px;
   height: 388px;
@@ -69,5 +70,5 @@ export default {
 .logoTxt{font-size: 16px;}
 h3{margin-top: 0; font-size: 26px;font-weight:300;}
 .backmost{background-color: #333;font-size: 14px;margin:0;padding-bottom: 8px;color: #fff;}
-
+.footLogo{text-align: left;}
 </style>
