@@ -86,12 +86,10 @@ export default {
         document.body.clientHeight;
       var divTop = showId.getBoundingClientRect().top;
       let that = this;
-      console.log("ID:"+divTop)
-      console.log("clients:"+clients)
-      if (divTop <= clients) {
-        this.isAddClass = true;
-      } else {
+      if (divTop > clients || divTop < -300) {
         this.isAddClass = false;
+      } else {
+        this.isAddClass = true;
       }
     }
   },
