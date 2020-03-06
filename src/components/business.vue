@@ -44,7 +44,7 @@ export default {
 };
 </script>
 <style scoped>
-#business{background-color: #FAFAFA;margin-bottom: 20px;height: 389px;}
+#business{margin-bottom: 20px;height: 389px;}
 #business h3{font-size: 14px;}
 #business p{font-size: 12px;
     width: 138px;

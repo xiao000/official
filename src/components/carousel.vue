@@ -14,7 +14,7 @@
 <script>
 import Carousel1 from "../assets/img/Carousel1.png"
 import Carousel2 from "../assets/img/Carousel2.png"
-import Carousel3 from "../assets/img/Carousel1.png"
+import Carousel3 from "../assets/img/Carousel3.png"
 export default {
   data() {
     return {

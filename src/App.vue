@@ -11,6 +11,7 @@ export default {
 </script>
 
 <style>
+/* html{font-size: calc(100vw/19.2);} */
 body{padding: 0;
   margin: 0;}
 #app {

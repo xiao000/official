@@ -105,6 +105,8 @@ export default {
   line-height: 65px;
   padding: 0 10px;
   margin: auto 8px;
+  font-size: .14rem;
+  font-size: 14px;
 }
 .handMain ul li a {
   display: block;
@@ -117,6 +119,5 @@ export default {
   /* border: 1px solid #F55033;
   background-color: #F55033; */
   color: #F55033;
-  border-radius:5px;
 }
 </style>

@@ -29,6 +29,5 @@ export default {
 <style scoped>
 .partner{
   padding-bottom:3%;/*  285px; */
-  background-color: #FAFAFA;
   }
 </style>
