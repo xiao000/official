@@ -3,11 +3,11 @@
     <div class="partner">
       <el-row><el-col :span="24"><h1>合作伙伴</h1></el-col></el-row>
         <el-row :gutter="20" type="flex" class="row-bg" justify="center">
-            <el-col :span="4"><img :src="partner1" alt="partner1"></el-col>
-            <el-col :span="4"><img :src="partner2" alt="partner2"></el-col>
-            <el-col :span="4"><img :src="partner3" alt="partner3"></el-col>
-            <el-col :span="4"><img :src="partner4" alt="partner4"></el-col>
-            <el-col :span="4"><img :src="partner5" alt="partner5"></el-col>
+            <el-col :span="2"><img :src="partner1" alt="partner1"></el-col>
+            <el-col :span="2"><img :src="partner2" alt="partner2"></el-col>
+            <el-col :span="2"><img :src="partner3" alt="partner3"></el-col>
+            <el-col :span="2"><img :src="partner4" alt="partner4"></el-col>
+            <el-col :span="2"><img :src="partner5" alt="partner5"></el-col>
         </el-row>
     </div>
 </template>
@@ -28,7 +28,7 @@ export default {
 </script>
 <style scoped>
 .partner{
-  height: 285px;
+  padding-bottom:3%;/*  285px; */
   background-color: #FAFAFA;
   }
 </style>

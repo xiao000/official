@@ -28,6 +28,6 @@ body{padding: 0;
         max-height:100%;
 		}
 #app  h1{
-  font-size: 36px;
+  font-size: 26px;
 }
 </style>

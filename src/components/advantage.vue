@@ -4,26 +4,29 @@
     <el-row><el-col :span="24"><h1>比特云算的优势</h1></el-col></el-row>
     <el-row type="flex" class="row-bg" justify="center">
     <template v-for="(item, index) in item1">
-        <el-col :span="12" :key="index">
-          <el-col :span="6" :offset="6">
+        <el-col :span="6" :key="index" :offset="3">
+          <el-col :span="6">
             <img :src="item.imgVal" :alt="item.title">
           </el-col>
-          <el-col :span="10" class="textCl">
-            <h3>{{item.title}}</h3>
+           <el-col :span="6">
+            <div class="arrow">
+            </div>
+          </el-col>
+          <el-col :span="12" class="textCl">
+            <div>{{item.title}}</div>
             <span>{{item.text}}</span>
-              
           </el-col>
         </el-col>
       </template>
     </el-row>
     <el-row type="flex" class="row-bg" justify="center">
     <template v-for="(item, index) in item2">
-        <el-col :span="12" :key="index">
-          <el-col :span="6" :offset="6">
+        <el-col :span="6" :key="index" :offset="3">
+          <el-col :span="6">
             <img :src="item.imgVal" :alt="item.title">
           </el-col>
-          <el-col :span="10" class="textCl">
-            <h3>{{item.title}}</h3>
+          <el-col :span="12" class="textCl">
+            <div>{{item.title}}</div>
             <span>{{item.text}}</span>
           </el-col>
         </el-col>
@@ -65,7 +68,9 @@ export default {
 };
 </script>
 <style scoped>
-#advantage{background-color: #FAFAFA; margin-bottom: 20px;}
+#advantage{background-color: #FAFAFA; margin-bottom: 20px;height: 466px;}
 .row-bg{padding-bottom: 90px;}
 .textCl{text-align: left;padding-top:5%}
+.textCl div{font-size: 14px;font-weight:600;}
+.textCl span{font-size: 12px;}
 </style>

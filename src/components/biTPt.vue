@@ -100,7 +100,7 @@ export default {
 </script>
 <style scoped>
 #cloudPTCon {
-  height: 242px;
+  height: 164px;
 }
 .pt1Animat,
 .pt2Animat,
@@ -112,14 +112,11 @@ export default {
   /* 定义动画的播放次数。infinite */
   animation-iteration-count: 1;
   /* 动画指定需要多少秒或毫秒完成 */
-  animation-duration: 2s;
+  animation-duration: 1s;
   -webkit-animation-iteration-count: 1;
-  -webkit-animation-duration: 2s;
+  -webkit-animation-duration: 1s;
 }
 /* animation-delay设置动画在启动前的延迟间隔。 */
-.pt1Animat {
-  animation-delay: 1s;
-}
 .pt2Animat {
   animation-delay: 2s;
 }
@@ -143,13 +140,13 @@ export default {
   /* height: 242px; */
   background: url(../assets/img/ptbj.png) no-repeat center center;
   background-size: 100% 100%;
-  margin-left: 8%;
-  padding: 35px 6px 6px 45px;
+  padding: 35px 6px 16px 45px;
   position: absolute;
   top: 0px;
+  width: 50%;
 }
 .platform span {
-  font-size: 16px;
+  font-size: 14px;
   width: 135px;
 }
 </style>

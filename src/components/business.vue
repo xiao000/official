@@ -9,7 +9,7 @@
             <img :src="item.imgVal" :alt="index">
             </div>
           <h3>{{item.title}}</h3>
-          <span>{{item.text}}</span>
+          <p>{{item.text}}</p>
         </el-col>
       </template>
     </el-row>
@@ -31,7 +31,7 @@ export default {
         {
           imgVal: business2,
           title: "矿机托管",
-          text: "降低运维难度和电力成本保障矿机安全和稳定的运转"
+          text: "降低运维难度和电力成本 保障矿机安全和稳定运转"
         },
         {
           imgVal: business3,
@@ -44,10 +44,11 @@ export default {
 };
 </script>
 <style scoped>
-#business{background-color: #FAFAFA;margin-bottom: 20px;padding-bottom: 80px;}
-#business h3{font-size: 26px;}
-#business span{font-size: 16px;
-    width: 193px;
+#business{background-color: #FAFAFA;margin-bottom: 20px;height: 389px;}
+#business h3{font-size: 14px;}
+#business p{font-size: 12px;
+    width: 138px;
     display: block;
+    text-align: left;
     margin: auto;}
 </style>

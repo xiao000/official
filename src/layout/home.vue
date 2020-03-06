@@ -2,22 +2,16 @@
   <!-- 主页面 -->
   <el-container>
     <div class="home el-scrollbar" ref="home">
-      <el-header> 
-        <head-nav></head-nav>
-      </el-header>
-      <el-main>
+      <head-nav></head-nav>
         <div class="main">
             <!-- <transition  name="custom-classes-transition"  enter-active-class="animated fadeInDown" leave-active-class="animated fadeOutDown" > -->
-       <transition mode="in-out" name="fadee">
-        <router-view></router-view>
-      </transition>
+          <transition mode="in-out" name="fadee">
+            <router-view></router-view>
+          </transition>
         </div>
-      </el-main>
-      <el-footer>
       <div class="indFooter">
         <footerNav></footerNav>
       </div>
-      </el-footer>
       <backTop :ele="$refs.home"></backTop>
     </div>
   </el-container>
@@ -42,7 +36,7 @@ export default {
 <style scoped>
 .home {
   margin: auto;
-  width: 95%;
+  width: 100%;
 }
 .indFooter {
   margin-bottom: 10px;

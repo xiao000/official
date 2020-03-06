@@ -1,14 +1,10 @@
 <template>
   <div class="handMain">
     <el-row>
-      <el-col :span="10">
-          <div class="logoImg">
-            <img class="logo" :src="logo" alt="比特云算" />
-            <img class="logoImgTxt" :src="logoImgTxt" alt="比特云算" />
-          </div>
-       
+      <el-col :span="10" class="logoImg">
+          <img class="logo" :src="logo" alt="比特云算" />
       </el-col>
-      <el-col :md="14" :sm="24">
+      <el-col :span="14">
         <ul class="el-menu-demo" mode="horizontal">
           <li
             :class="{ active: index==selectItem }"
@@ -22,13 +18,11 @@
   </div>
 </template>
 <script>
-import logoImg from "@/assets/img/logo.png";
-import logoImgTxt from "@/assets/img/logoTxt.png";
+import logoImg from "@/assets/img/logo11.png";
 export default {
   data() {
     return {
       logo: logoImg,
-      logoImgTxt:logoImgTxt,
       selectItem: 0,
       items: [
         { domId: "block", name: "首页" },
@@ -84,24 +78,22 @@ export default {
 
 <style scoped>
 .logoImg{
-  display: inline-block;
-  width: 100%;
-  height: 90px;
-  line-height: 90px;
-  margin: 10px 0;
+  /* width: 100%; */
+  height: 65px;
+ line-height: 65px;
+   /* padding: 10px 0; */
 }
-.logoImg img{vertical-align:middle;margin-right:20px; }
+.logoImg img{vertical-align:middle;margin-right:20px;}
 
 .handMain {
   background-color: #333;
   color: #ffffff;
   border-bottom: 1px solid #333;
-  font-size: 18px;
 }
 
 .handMain ul {
   margin: 0;
-  height: 115px;
+  height: 65px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -109,9 +101,8 @@ export default {
 .handMain ul li {
   list-style: none;
   width: 88px;
-  height: 38px;
-  line-height: 38px;
-  font-size: 18px;
+  height: 65px;
+  line-height: 65px;
   padding: 0 10px;
   margin: auto 8px;
 }
@@ -123,8 +114,9 @@ export default {
 }
 .handMain ul li.active,
 .handMain ul li:hover {
-  border: none;
-  /* color: #ff6a00; */
-  background-color: #F55033;
+  /* border: 1px solid #F55033;
+  background-color: #F55033; */
+  color: #F55033;
+  border-radius:5px;
 }
 </style>

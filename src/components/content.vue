@@ -1,7 +1,6 @@
 <template>
    
     <div class="main">
-         <!-- 走马灯 -->
         <carousel></carousel>
         <cloud></cloud>
         <advantage></advantage>
