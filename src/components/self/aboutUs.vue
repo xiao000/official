@@ -1,6 +1,6 @@
  <template>
  <div class="aboutus">
- <el-row> <el-col :span="24"> <h1>关于我们</h1></el-col></el-row>
+ <el-row > <el-col :span="24"> <h1 class="titleHegiht">关于我们</h1></el-col></el-row>
  <el-row type="flex" class="row-bg" justify="center">
    <el-col :span="12">
      <p>
@@ -12,5 +12,7 @@
  
 </template>
 <style scoped>
-p{text-indent:2em;line-height:1.5em;text-align: left;} 
+.aboutus{height: 324px;}
+.titleHegiht{height: 160px;line-height: 160px;margin: 0;}
+p{text-indent:2em;text-align: left;} 
 </style>

@@ -21,5 +21,4 @@ export default {
 }
 </script>
 <style scoped>
-.main{background-color: #FAFAFC;}
 </style>

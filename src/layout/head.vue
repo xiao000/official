@@ -63,6 +63,7 @@ export default {
             window.scrollBy({ top: S, behavior: "smooth" });
           }
           that.selectItem = index;
+
         } else {
           that.selectItem = index;
           that.$router.push({ path: "/content" });
@@ -114,9 +115,6 @@ export default {
 }
 .handMain ul li.active,
 .handMain ul li:hover {
-  /* border: 1px solid #F55033;
-  background-color: #F55033; */
   color: #F55033;
-  border-radius:5px;
 }
 </style>

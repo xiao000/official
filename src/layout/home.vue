@@ -38,7 +38,4 @@ export default {
   margin: auto;
   width: 100%;
 }
-.indFooter {
-  margin-bottom: 10px;
-}
 </style>
