@@ -1,39 +1,36 @@
 <template>
   <div id="cloudPTCon">
     <el-row type="flex" class="row-bg" justify="end">
-      <el-col :span="18" :xs="18">
+      <el-col :span="24">
         <el-row type="flex" class="row-bg" justify="center" align="bottom">
           <div class="platform">
-            <el-col ref="pt1Animat" :span="4" :class="['pt1Animat animated', { 'fadeInLeft': isAddClass}]">
-              <img :src="pt1" alt />
-              <br />
+            <el-col ref="pt1Animat" :span="5" :class="['pt1Animat animated', { 'fadeInLeft': isAddClass}]">
+              <img :src="pt1" alt class="ptImg"/>
               <span>采购矿机</span>
             </el-col>
-            <el-col ref="pt2Animat" :span="2" :class="['pt2Animat animated', { 'fadeInLeft': isAddClass}]">
-              <img :src="pt" alt />
-              <br />
+            <el-col ref="pt2Animat" :span="1" :class="['pt2Animat animated', { 'fadeInLeft': isAddClass}]">
+              <img :src="pt" alt class="ptImg"/>
+ 
             </el-col>
-            <el-col ref="pt3Animat" :span="4" :class="['pt3Animat animated', { 'fadeInLeft': isAddClass}]">
-              <img :src="pt2" alt />
-              <br />
+            <el-col ref="pt3Animat" :span="5" :class="['pt3Animat animated', { 'fadeInLeft': isAddClass}]">
+             <img :src="pt2" alt class="ptImg"/>
               <span>运输至矿场</span>
             </el-col>
-            <el-col ref="pt4Animat" :span="2" :class="['pt4Animat animated', { 'fadeInLeft': isAddClass}]">
-              <img :src="pt" alt />
-              <br />
+            <el-col ref="pt4Animat" :span="1" :class="['pt4Animat animated', { 'fadeInLeft': isAddClass}]">
+              <img :src="pt" alt class="ptImg"/>
+ 
             </el-col>
-            <el-col ref="pt5Animat" :span="4" :class="['pt5Animat animated', { 'fadeInLeft': isAddClass}]">
-              <img :src="pt3" alt />
-              <br />
+            <el-col ref="pt5Animat" :span="6" :class="['pt5Animat animated', { 'fadeInLeft': isAddClass}]">
+             <img :src="pt3" alt class="ptImg"/>
               <span>调试矿机联通矿池</span>
             </el-col>
-            <el-col ref="pt6Animat" :span="2" :class="['pt6Animat animated', { 'fadeInLeft': isAddClass}]">
-              <img :src="pt" alt />
-              <br />
+            <el-col ref="pt6Animat" :span="1" :class="['pt6Animat animated', { 'fadeInLeft': isAddClass}]">
+              <img :src="pt" alt class="ptImg"/>
+ 
             </el-col>
-            <el-col ref="pt7Animat" :span="4" :class="['pt7Animat animated', { 'fadeInLeft': isAddClass}]">
-              <img :src="pt4" alt />
-              <br />
+            <el-col ref="pt7Animat" :span="5" :class="['pt7Animat animated', { 'fadeInLeft': isAddClass}]">
+              <img :src="pt4" alt class="ptImg"/>
+ 
               <span>矿机运维</span>
             </el-col>
           </div>
@@ -100,7 +97,7 @@ export default {
 </script>
 <style scoped>
 #cloudPTCon {
-  height: 164px;
+  height: 170px;
 }
 .pt1Animat,
 .pt2Animat,
@@ -140,13 +137,16 @@ export default {
   /* height: 242px; */
   background: url(../assets/img/ptbj.png) no-repeat center center;
   background-size: 100% 100%;
-  padding: 35px 6px 16px 45px;
+  padding: 32px 16px 16px;
   position: absolute;
-  top: 0px;
-  width: 50%;
+  top: 10px;
+  right: 0;
+  width: 60%;
 }
 .platform span {
-  font-size: 14px;
+  font-size: 18px;
   width: 135px;
 }
+.ptImg{display: block;
+    margin: auto;}
 </style>

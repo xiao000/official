@@ -8,10 +8,8 @@
                 </div>
             </el-col>
             <el-col :span="8">
-                <div class="lodApp">
-                    <div class="codeApp">扫码下载APP</div>
-                    <img :src="appcode" alt="手机">
-                </div>
+                <div class="codeApp">扫码下载APP</div>
+                <img :src="appcode" alt="手机">
             </el-col>
         </el-row>
     </div>
@@ -34,6 +32,5 @@ export default {
     background-size: 100% 100%;
     /* height: 775px; */
     }
-.lodApp{padding-top: 28%;}
-.codeApp{font-size: 26px;}
+.codeApp{font-size: 26px;padding-top: 28%;}
 </style>

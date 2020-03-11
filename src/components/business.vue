@@ -1,10 +1,11 @@
 <template>
   <!-- 业务范围 -->
   <div id="business">
-    <el-row><el-col :span="24"><h1>业务范围</h1></el-col></el-row>
-   <el-row :gutter="20" type="flex" class="row-bg" justify="center">
+    <div class="widthLR">
+    <el-row><el-col :span="24"><h1 class="titleHegiht">业务范围</h1></el-col></el-row>
+    <el-row>
       <template v-for="(item, index) in items">
-        <el-col :span="5" :key="index">
+        <el-col class="businessMian" :span="8" :key="index">
           <div class="img">
             <img :src="item.imgVal" :alt="index">
             </div>
@@ -13,6 +14,7 @@
         </el-col>
       </template>
     </el-row>
+    </div>
   </div>
 </template>
 <script>
@@ -44,11 +46,20 @@ export default {
 };
 </script>
 <style scoped>
-#business{margin-bottom: 20px;height: 389px;}
-#business h3{font-size: 14px;}
-#business p{font-size: 12px;
-    width: 138px;
+#business{margin-bottom: 20px;height: 487px;}
+#business h3{font-size: 24px; font-weight: 500;}
+#business p{
+    font-size: 18px;
+    width: 206px;
     display: block;
-    text-align: left;
-    margin: auto;}
+    text-align:left;
+    margin: auto;
+    padding-left: 20px;
+    font-weight: 300;
+    color: #575757;
+    }
+    .businessMian:first-child{width: 20.53%;}
+     .businessMian:nth-child(2){width: 56.13%;}
+      .businessMian:last-child{width: 23.33%;}
+
 </style>

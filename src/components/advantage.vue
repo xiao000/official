@@ -1,37 +1,51 @@
 <template>
   <!-- 比特云算的优势-->
   <div id="advantage">
-    <el-row><el-col :span="24"><h1>比特云算的优势</h1></el-col></el-row>
-    <el-row type="flex" class="row-bg" justify="center">
-    <template v-for="(item, index) in item1">
-        <el-col :span="6" :key="index" :offset="3">
+    <div class="widthLR">
+      <el-row><el-col :span="24"><h1 class="titleHegiht">比特云算的优势</h1></el-col></el-row>
+      <el-row>
+          <el-col :span="12" >
+            <el-col :span="6">
+              <img :src="advantage1" alt="产品丰富">
+            </el-col>
+            <el-col :span="18" class="textCl">
+              <div>产品丰富</div>
+              <span>180天/360天、含电费/不含电费 全都有</span>
+            </el-col>
+          </el-col>
+          <el-col :span="8" :offset="4">
+            <el-col :span="6">
+              <img :src="advantage2" alt="收益稳定">
+            </el-col>
+            <el-col :span="18" class="textCl">
+              <div>收益稳定</div>
+              <span>运营期间从未故障断发用户收益</span>
+            </el-col>
+          </el-col>
+      </el-row>
+      <br>
+      <el-row>
+        <el-col :span="12">
           <el-col :span="6">
-            <img :src="item.imgVal" :alt="item.title">
+            <img :src="advantage3" alt="超低电费">
           </el-col>
-           <el-col :span="6">
-            <div class="arrow">
-            </div>
+          <el-col :span="18" class="textCl">
+              <div>超低电费</div>
+              <span>每度电价低至0.38元</span>
           </el-col>
-          <el-col :span="12" class="textCl">
-            <div>{{item.title}}</div>
-            <span>{{item.text}}</span>
+           </el-col>
+           <el-col :span="8" :offset="4">
+            <el-col :span="6">
+              <img :src="advantage4" alt="收益稳定">
+            </el-col>
+            <el-col :span="18" class="textCl">
+              <div>1元起购</div>
+              <span>运营期间从未故障断发用户收益</span>
+            </el-col>
           </el-col>
-        </el-col>
-      </template>
-    </el-row>
-    <el-row type="flex" class="row-bg" justify="center">
-    <template v-for="(item, index) in item2">
-        <el-col :span="6" :key="index" :offset="3">
-          <el-col :span="6">
-            <img :src="item.imgVal" :alt="item.title">
-          </el-col>
-          <el-col :span="12" class="textCl">
-            <div>{{item.title}}</div>
-            <span>{{item.text}}</span>
-          </el-col>
-        </el-col>
-      </template>
-    </el-row>
+       
+      </el-row>
+    </div>
   </div>
 </template>
 <script>
@@ -42,28 +56,11 @@ import advantage4 from "../assets/img/advantage4.png"
 export default {
   data() {
     return {
-      item1:[{
-          imgVal: advantage1,
-          title: "产品丰富",
-          text: "180天/360天、含电费/不含电费 全都有"
-        },
-        {
-          imgVal: advantage2,
-          title: "收益稳定",
-          text: "运营期间从未故障断发用户收益"
-        }],
-      item2:[
-          {
-          imgVal: advantage3,
-          title: "超低电费",
-          text: "每度电价低至0.38元"
-        },
-        {
-          imgVal: advantage4,
-          title: "1元起购",
-          text: "起购门槛业内最低"
-        }]
-    };
+      advantage1:advantage1,
+      advantage2:advantage2,
+      advantage3:advantage3,
+      advantage4:advantage4
+    }
   }
 };
 </script>
@@ -71,6 +68,6 @@ export default {
 #advantage{background-color: #FAFAFA; margin-bottom: 20px;height: 466px;}
 .row-bg{padding-bottom: 90px;}
 .textCl{text-align: left;padding-top:5%}
-.textCl div{font-size: 14px;font-weight:600;}
-.textCl span{font-size: 12px;}
+.textCl div{font-size: 24px;font-weight:500;margin-bottom: 10px;}
+.textCl span{font-size: 16px;color: #575757;}
 </style>

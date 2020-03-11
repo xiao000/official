@@ -1,0 +1,23 @@
+body{padding: 0;
+    margin: 0;}
+  #app {
+    font-family: "PuHuiTi";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #000;
+  }
+  #app .el-main{padding: 0 20px 20px 20px;}
+  #app img {
+            width:auto;
+          height:auto;
+          max-width:100%;
+          max-height:100%;
+          margin: auto;
+          }
+  #app  h1{
+    font-size: 38px;
+  }
+  .titleHegiht{height: 160px;line-height: 160px;margin: 0;}
+#app .widthLR{width:62%;margin:auto;
+}

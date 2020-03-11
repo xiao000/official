@@ -1,22 +1,27 @@
  <template>
   <div class="contactUs">
+    <div class="widthLR">
     <el-row> <el-col :span="24"> <h1 class="titleHegiht">联系我们</h1></el-col></el-row>
-    <el-row type="flex" class="row-bg myMain" justify="center">
-      <el-col :span="4"><h2>商业合作</h2></el-col>
-      <el-col :span="9" class="syhz">service@hashsl.com</el-col>
+    <el-row class="serviceImg">
+      <el-col :span="3"><h2>商业合作</h2></el-col>
+      <el-col :span="18" class="syhz">service@hashsl.com</el-col>
     </el-row>
-    <el-row type="flex" class="row-bg myMain2" justify="center">
-      <el-col :span="4"><h2>客户服务</h2></el-col>
-      <el-col :span="3" class="khfw">
+    <el-row> 
+      <el-col :span="3"><h2>客户服务</h2></el-col>
+      <el-col :span="5" class="khfw">
           <img :src="service3" alt="">
+          <p style="text-align: center;">Eva</p>
       </el-col>
-       <el-col :span="3" class="khfw">
+       <el-col :span="5" class="khfw">
           <img :src="service2" alt="">
+          <p style="text-align: center;">花心</p>
       </el-col>
-       <el-col :span="3" class="khfw">
+       <el-col :span="5" class="khfw">
           <img :src="service1" alt="">
+          <p style="text-align: center;">皇阿玛</p>
       </el-col>
     </el-row>
+  </div>
   </div>
 </template>
 <script>
@@ -32,10 +37,11 @@ export default {
 }
 </script>
 <style scoped>
-.contactUs{height:672px;background-color: #FAFAFA; }
-.titleHegiht{height: 160px;line-height: 160px;margin: 0;}
-h2{font-size: 16px;font-weight: 400;margin: auto;}
-.syhz,.khfw{text-align: left;}
+.contactUs{height:672px;background-color: #FAFAFA;}
+h2{font-weight: 400;margin: auto; font-size: 18px; text-align: left;}
+.syhz{text-align: left;font-size: 18px; }
+.khfw{text-align: center;font-size: 18px;}
+.khfw:nth-child(3){margin:0 12%;}
 .myMain{margin-bottom: 98px;}
-/* .khfw div{ display: inline-block;width: 100px;height: 100px;border: 1px solid #CCCBCE;margin-right: 18px;margin-top: 22px} */
+.serviceImg{margin-bottom:110px;}
 </style>

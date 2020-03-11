@@ -2,7 +2,6 @@
     <div class="main">
          <!-- 关于我们 -->
         <self-img></self-img>
-        
         <about-us></about-us>
         <contact-us></contact-us>
         
@@ -20,5 +19,3 @@ export default {
         },
 }
 </script>
-<style scoped>
-</style>

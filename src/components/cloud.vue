@@ -1,28 +1,29 @@
 <template>
   <!-- 云算力 -->
   <div id="cloud">
+    <div class="widthLR">
     <el-row>
       <el-col :span="24">
-        <h1>云算力</h1>
+        <h1 class="titleHegiht">云算力</h1>
       </el-col>
     </el-row>
      <el-row type="flex" class="row-bg" justify="center" align="middle">
-        <el-col :span="3">
-              <img :src="cloud1" alt="1" />
+        <el-col :span="7">
+              <img :src="cloud1" alt="1"/>
               <span class="cloudTxt">购买算力套餐</span>
         </el-col>
-        <el-col :span="6">
+        <el-col :span="8">
           <div class="arrow">
             <img :src="arrow2" alt="1" />
           </div>
         </el-col>
-        <el-col :span="3" class="btCloud">
+        <el-col :span="7" class="btCloud">
           <img :src="cloud2" alt="1" />
           <span class="cloudTxt" id="positionPT">比特云算平台</span>
         </el-col>
     </el-row>
         <biTiCloudPT></biTiCloudPT>
-    <el-row>
+    <el-row style="height: 83px;">
       <el-col :span="12" :offset="12">
         <div class="arrowt">
           <img :src="arrow1" alt="1" />
@@ -30,20 +31,21 @@
       </el-col>
     </el-row>
     <el-row type="flex" class="row-bg" justify="center" align="middle">
-      <el-col :span="3">
+      <el-col :span="7">
         <img :src="cloud3" alt="1" />
         <span class="cloudTxt">分配收益给用户</span>
       </el-col>
-     <el-col :span="6">
+     <el-col :span="8">
         <div class="arrowl">
           <img :src="arrow2" alt="1" />
         </div>
       </el-col>
-     <el-col :span="3" :offset="1">
+     <el-col :span="7" :offset="1">
         <img :src="cloud4" alt="1" />
         <span class="cloudTxt">挖矿产生收益</span>
       </el-col>
     </el-row>
+  </div>
   </div>
 </template>
 
@@ -77,8 +79,9 @@ export default {
   margin-bottom: 20px;
 }
 .cloudTxt {
-  font-size: 14px;
+  font-size: 24px;
   width: 192px;
+  font-weight:500;
 }
 
 .arrow {
@@ -165,7 +168,7 @@ export default {
   }
 }
 .arrowt{
-  right: 10%;
+  right: -10%;
   position: relative;
   animation: arrowDown 3s linear infinite;
 }
@@ -333,5 +336,5 @@ export default {
 .arrowl img {
   transform: rotate(180deg);
 }
-
+img{display: block;}
 </style>

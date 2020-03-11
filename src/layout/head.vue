@@ -1,10 +1,11 @@
 <template>
   <div class="handMain">
+    <div class="widthLR">
     <el-row>
-      <el-col :span="10" class="logoImg">
+        <el-col :span="3" class="logoImg">
           <img class="logo" :src="logo" alt="比特云算" />
       </el-col>
-      <el-col :span="14">
+      <el-col :span="12" :offset="9">
         <ul class="el-menu-demo" mode="horizontal">
           <li
             :class="{ active: index==selectItem }"
@@ -15,6 +16,7 @@
         </ul>
       </el-col>
     </el-row>
+    </div>
   </div>
 </template>
 <script>
@@ -79,42 +81,38 @@ export default {
 
 <style scoped>
 .logoImg{
-  /* width: 100%; */
-  height: 65px;
- line-height: 65px;
-   /* padding: 10px 0; */
+ line-height: 80px;
 }
 .logoImg img{vertical-align:middle;margin-right:20px;}
 
 .handMain {
-  background-color: #333;
+  background-color: #2d2d2d;
   color: #ffffff;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #2d2d2d;
+  height: 80px;
 }
 
 .handMain ul {
   margin: 0;
-  height: 65px;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 .handMain ul li {
   list-style: none;
-  width: 88px;
-  height: 65px;
-  line-height: 65px;
-  padding: 0 10px;
-  margin: auto 8px;
+  min-width: 80px;
+  line-height: 80px;
+  padding: 0 15px;
+  font-size: 17px;
 }
-.handMain ul li a {
-  display: block;
-  color: black;
-  text-align: center;
-  text-decoration: none;
+.handMain ul li:last-child{
+  padding: 0;
+  margin: 0;
 }
 .handMain ul li.active,
 .handMain ul li:hover {
   color: #F55033;
+  font-size: 17px;
+  font-weight: 600;
 }
 </style>
