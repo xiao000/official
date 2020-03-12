@@ -49,6 +49,7 @@ export default {
 };
 </script>
 <style scoped>
+.partner{height: 366px;}
 .imgWidth{width:25.66%;}
 .imgWidth:nth-child(1){text-align: left;}
 </style>

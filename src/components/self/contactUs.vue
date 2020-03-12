@@ -37,7 +37,7 @@ export default {
 }
 </script>
 <style scoped>
-.contactUs{height:672px;background-color: #FAFAFA;}
+.contactUs{height:650px;background-color: #FAFAFA;}
 h2{font-weight: 400;margin: auto; font-size: 18px; text-align: left;}
 .syhz{text-align: left;font-size: 18px; }
 .khfw{text-align: center;font-size: 18px;}

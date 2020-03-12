@@ -14,6 +14,6 @@
  
 </template>
 <style scoped>
-.aboutus{height: 364px;}
+.aboutus{height: 366px;}
 p{text-align: left;font-size: 18px;} 
 </style>

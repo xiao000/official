@@ -3,6 +3,7 @@
   <div id="business">
     <div class="widthLR">
     <el-row><el-col :span="24"><h1 class="titleHegiht">业务范围</h1></el-col></el-row>
+    <div style="height:100px;"></div>
     <el-row>
       <template v-for="(item, index) in items">
         <el-col class="businessMian" :span="8" :key="index">
@@ -46,7 +47,7 @@ export default {
 };
 </script>
 <style scoped>
-#business{margin-bottom: 20px;height: 487px;}
+#business{margin-bottom: 20px;height: 712px;}
 #business h3{font-size: 24px; font-weight: 500;}
 #business p{
     font-size: 18px;

@@ -1,7 +1,7 @@
 <template>
   <!-- 页尾 -->
   <div class="footer">
-    <partner style="height:278px;"></partner>
+    <partner></partner>
     <div class="footMain">
       <div class="widthLR">
       <el-row type="flex" class="row-bg" justify="left">

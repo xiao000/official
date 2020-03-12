@@ -88,7 +88,7 @@ export default {
 .handMain {
   background-color: #2d2d2d;
   color: #ffffff;
-  border-bottom: 1px solid #2d2d2d;
+  /* border-bottom: 1px solid #2d2d2d; */
   height: 80px;
 }
 

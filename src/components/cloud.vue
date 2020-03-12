@@ -8,43 +8,40 @@
       </el-col>
     </el-row>
      <el-row type="flex" class="row-bg" justify="center" align="middle">
-        <el-col :span="7">
+        <el-col :span="4">
               <img :src="cloud1" alt="1"/>
               <span class="cloudTxt">购买算力套餐</span>
         </el-col>
-        <el-col :span="8">
+        <el-col :span="2">
           <div class="arrow">
             <img :src="arrow2" alt="1" />
           </div>
         </el-col>
-        <el-col :span="7" class="btCloud">
+        <el-col :span="4" class="btCloud">
           <img :src="cloud2" alt="1" />
           <span class="cloudTxt" id="positionPT">比特云算平台</span>
         </el-col>
-    </el-row>
-        <biTiCloudPT></biTiCloudPT>
-    <el-row style="height: 83px;">
-      <el-col :span="12" :offset="12">
-        <div class="arrowt">
-          <img :src="arrow1" alt="1" />
-        </div>
-      </el-col>
-    </el-row>
-    <el-row type="flex" class="row-bg" justify="center" align="middle">
-      <el-col :span="7">
+        <el-col :span="2">
+          <div class="arrow">
+            <img :src="arrow2" alt="1" />
+          </div>
+        </el-col>
+      <el-col :span="4">
         <img :src="cloud3" alt="1" />
         <span class="cloudTxt">分配收益给用户</span>
       </el-col>
-     <el-col :span="8">
-        <div class="arrowl">
-          <img :src="arrow2" alt="1" />
-        </div>
-      </el-col>
-     <el-col :span="7" :offset="1">
+      <el-col :span="2">
+          <div class="arrow">
+            <img :src="arrow2" alt="1" />
+          </div>
+        </el-col>
+     <el-col :span="4">
         <img :src="cloud4" alt="1" />
         <span class="cloudTxt">挖矿产生收益</span>
       </el-col>
     </el-row>
+        <biTiCloudPT></biTiCloudPT>
+ 
   </div>
   </div>
 </template>
@@ -54,7 +51,6 @@ import cloud1 from "../assets/img/ysl1.png";
 import cloud2 from "../assets/img/ysl2.png";
 import cloud3 from "../assets/img/ysl3.png";
 import cloud4 from "../assets/img/ysl4.png";
-import arrow1 from "../assets/img/arrow1.png";
 import arrow2 from "../assets/img/arrow22.png";
 import biTiCloudPT from "./biTPt"
 export default {
@@ -64,7 +60,6 @@ export default {
       cloud2: cloud2,
       cloud3: cloud3,
       cloud4: cloud4,
-      arrow1: arrow1,
       arrow2: arrow2
     };
   },
@@ -75,8 +70,7 @@ export default {
 </script>
 <style type="text/css3" scoped>
 #cloud {
-  padding-bottom: 90px;
-  margin-bottom: 20px;
+  height: 712px;
 }
 .cloudTxt {
   font-size: 24px;
@@ -167,174 +161,6 @@ export default {
     left: 58px;
   }
 }
-.arrowt{
-  right: -10%;
-  position: relative;
-  animation: arrowDown 3s linear infinite;
-}
-@keyframes arrowDown {
-  0% {
-    opacity: 0;
-    top: -18px;
-  }
-  20% {
-    opacity: 0.33;
-    top: 8px;
-  }
-  40% {
-    opacity: 0.66;
-    top: 18px;
-  }
-  60% {
-    opacity: 0.8;
-    top: 28px;
-  }
-  80% {
-    opacity: 0.5;
-    top: 38px;
-  }
-  100% {
-    opacity: 0;
-    top: 58px;
-  }
-}
-@-webkit-keyframes arrowDown {
- 0% {
-    opacity: 0;
-    top: -18px;
-  }
-  20% {
-    opacity: 0.33;
-    top: 8px;
-  }
-  40% {
-    opacity: 0.66;
-    top: 18px;
-  }
-  60% {
-    opacity: 0.8;
-    top: 28px;
-  }
-  80% {
-    opacity: 0.5;
-    top: 38px;
-  }
-  100% {
-    opacity: 0;
-    top: 58px;
-  }
-}
-@-moz-keyframes arrowDown {
- 0% {
-    opacity: 0;
-    top: -18px;
-  }
-  20% {
-    opacity: 0.33;
-    top: 8px;
-  }
-  40% {
-    opacity: 0.66;
-    top: 18px;
-  }
-  60% {
-    opacity: 0.8;
-    top: 28px;
-  }
-  80% {
-    opacity: 0.5;
-    top: 38px;
-  }
-  100% {
-    opacity: 0;
-    top: 58px;
-  }
-}
-.arrowl {
-  position: relative;
-  animation: arrowLeft 3s linear infinite;
-}
-@keyframes arrowLeft {
-  0% {
-    opacity: 0;
-    right: -58px;
-  }
-  20% {
-    opacity: 0.33;
-    right: -38px;
-  }
-  40% {
-    opacity: 0.66;
-    right: -18px;
-  }
-  60% {
-    opacity: 0.8;
-    right: 8px;
-  }
-  80% {
-    opacity: 0.5;
-    right: 28px;
-  }
-  100% {
-    opacity: 0;
-    right: 58px;
-  }
-}
-@-webkit-keyframes arrowLeft {
-  0% {
-    opacity: 0;
-    right: -58px;
-  }
-  20% {
-    opacity: 0.33;
-    right: -38px;
-  }
-  40% {
-    opacity: 0.66;
-    right: -18px;
-  }
-  60% {
-    opacity: 0.8;
-    right: 8px;
-  }
-  80% {
-    opacity: 0.5;
-    right: 28px;
-  }
-  100% {
-    opacity: 0;
-    right: 58px;
-  }
-}
-@-moz-keyframes arrowLeft {
-  0% {
-    opacity: 0;
-    right: -58px;
-  }
-  20% {
-    opacity: 0.33;
-    right: -38px;
-  }
-  40% {
-    opacity: 0.66;
-    right: -18px;
-  }
-  60% {
-    opacity: 0.8;
-    right: 8px;
-  }
-  80% {
-    opacity: 0.5;
-    right: 28px;
-  }
-  100% {
-    opacity: 0;
-    right: 58px;
-  }
-}
 
-.arrowl img {
-  transform: rotate(180deg);
-}
 img{display: block;}
 </style>

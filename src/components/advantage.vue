@@ -3,6 +3,7 @@
   <div id="advantage">
     <div class="widthLR">
       <el-row><el-col :span="24"><h1 class="titleHegiht">比特云算的优势</h1></el-col></el-row>
+      <div style="height:50px;"></div>
       <el-row>
           <el-col :span="12" >
             <el-col :span="6">
@@ -23,7 +24,7 @@
             </el-col>
           </el-col>
       </el-row>
-      <br>
+      <div style="height:80px;"></div>
       <el-row>
         <el-col :span="12">
           <el-col :span="6">
@@ -65,7 +66,7 @@ export default {
 };
 </script>
 <style scoped>
-#advantage{background-color: #FAFAFA; margin-bottom: 20px;height: 466px;}
+#advantage{background-color: #FAFAFA; height: 712px;}
 .row-bg{padding-bottom: 90px;}
 .textCl{text-align: left;padding-top:5%}
 .textCl div{font-size: 24px;font-weight:500;margin-bottom: 10px;}

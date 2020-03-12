@@ -33,7 +33,7 @@ export default {
 #downloadApp{
     background: url(../assets/img/bj.png) no-repeat center top;
     background-size: 100% 100%;
-    /* height: 775px; */
+    height: 712px;
     }
 .codeApp{font-size: 26px;padding-top: 28%; padding-left: 10%;}
 </style>
