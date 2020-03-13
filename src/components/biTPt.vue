@@ -140,8 +140,8 @@ export default {
   padding: 32px 16px 16px;
   position: absolute;
   top: 10px;
-  left: -48px;
-  width: 60%;
+  left: 35px;
+  width: 48%;
 }
 .platform span {
   font-size: 18px;

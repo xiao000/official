@@ -11,7 +11,7 @@
             </el-col>
             <el-col :span="18" class="textCl">
               <div>产品丰富</div>
-              <span>180天/360天、含电费/不含电费 全都有</span>
+              <span>超短期/90天/180天/360天 全都有</span>
             </el-col>
           </el-col>
           <el-col :span="8" :offset="4">
@@ -32,7 +32,7 @@
           </el-col>
           <el-col :span="18" class="textCl">
               <div>超低电费</div>
-              <span>每度电价低至0.38元</span>
+              <span>每度电价低至0.35元</span>
           </el-col>
            </el-col>
            <el-col :span="8" :offset="4">

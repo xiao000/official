@@ -8,7 +8,7 @@
                 </div>
             </el-col>
             <el-col :span="4" :offset="1">
-                <div style="text-align: left;">
+                <div style="text-align: left;margin: 24% 0px;">
                     <div class="codeApp">扫码下载APP</div>
                     <img :src="appcode" alt="手机">
                 </div>

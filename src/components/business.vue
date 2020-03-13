@@ -29,7 +29,7 @@ export default {
         {
           imgVal: business1,
           title: "云算力",
-          text: "云算力合约，1元起购，获取数字货币收益如此简单"
+          text: "云算力套餐，1元起购，获取数字货币收益如此简单"
         },
         {
           imgVal: business2,
